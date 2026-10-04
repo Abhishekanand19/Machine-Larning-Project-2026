@@ -1,0 +1,33 @@
+{
+  "seed": 42,
+  "samples": 20000,
+  "width": 1280,
+  "height": 720,
+  "fx": 400.0,
+  "fy": 400.0,
+  "cx": 640.0,
+  "cy": 360.0,
+  "noise_std_px": 2,
+  "occlusion_probability": 0.1,
+  "min_visible": 8,
+  "ranges": [
+    [
+      20,
+      100
+    ],
+    [
+      -20,
+      20
+    ],
+    [
+      -10,
+      10
+    ],
+    [
+      -45,
+      45
+    ]
+  ],
+  "attempted_samples": 20002,
+  "rejected_samples": 2
+}

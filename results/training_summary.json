@@ -1,0 +1,12 @@
+{
+  "seed": 42,
+  "optimizer": "Adam",
+  "learning_rate": 0.001,
+  "batch_size": 256,
+  "max_epochs": 300,
+  "epochs_completed": 300,
+  "patience": 40,
+  "best_epoch": 299,
+  "best_validation_loss": 0.007555442862212658,
+  "seconds": 178.505121899987
+}

@@ -1,0 +1,14 @@
+{
+  "dataset_generation": "passed: 20000 valid rows",
+  "dataset_validation": "passed: 46 columns, no nulls/nonfinite/duplicates",
+  "preprocessing": "passed: 14000/3000/3000, scaler fitted on train only",
+  "smoke_training": "passed: 3 epochs",
+  "proper_training": "passed: 300 epochs, best epoch 299",
+  "evaluation": "passed: 3000 held-out samples",
+  "individual_predictions": "passed: five unseen rows",
+  "pipeline_tests": "passed: 5 tests",
+  "streamlit_app_test": "passed: four tabs and both selection controls",
+  "streamlit_server": "passed: health and root HTTP 200",
+  "python_compilation": "passed",
+  "live_browser": "passed: Edge rendered overview, live plot, pose comparison, position and roll error cards"
+}

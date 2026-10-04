@@ -1,0 +1,158 @@
+{
+  "scenarios": [
+    {
+      "truth": [
+        25,
+        0,
+        0,
+        0
+      ],
+      "prediction": [
+        22.870094299316406,
+        -0.25262418389320374,
+        0.3049672842025757,
+        0.38541319966316223
+      ],
+      "seed": 42,
+      "visible_keypoints": 14
+    },
+    {
+      "truth": [
+        90,
+        0,
+        0,
+        0
+      ],
+      "prediction": [
+        91.42912292480469,
+        -0.2819116711616516,
+        0.041267018765211105,
+        1.257491111755371
+      ],
+      "seed": 42,
+      "visible_keypoints": 14
+    },
+    {
+      "truth": [
+        60,
+        -15,
+        0,
+        0
+      ],
+      "prediction": [
+        63.10132598876953,
+        -15.611481666564941,
+        0.1518283188343048,
+        1.9829970598220825
+      ],
+      "seed": 42,
+      "visible_keypoints": 14
+    },
+    {
+      "truth": [
+        60,
+        15,
+        0,
+        0
+      ],
+      "prediction": [
+        59.86305236816406,
+        15.471299171447754,
+        -0.06652066111564636,
+        -0.19242927432060242
+      ],
+      "seed": 42,
+      "visible_keypoints": 14
+    },
+    {
+      "truth": [
+        60,
+        0,
+        -8,
+        0
+      ],
+      "prediction": [
+        61.853511810302734,
+        0.23559477925300598,
+        -8.349440574645996,
+        0.16036957502365112
+      ],
+      "seed": 42,
+      "visible_keypoints": 14
+    },
+    {
+      "truth": [
+        60,
+        0,
+        8,
+        0
+      ],
+      "prediction": [
+        62.039669036865234,
+        0.5986946225166321,
+        8.351844787597656,
+        -0.34929922223091125
+      ],
+      "seed": 42,
+      "visible_keypoints": 14
+    },
+    {
+      "truth": [
+        60,
+        0,
+        0,
+        -40
+      ],
+      "prediction": [
+        61.68980407714844,
+        0.33931902050971985,
+        0.24986052513122559,
+        -39.685874938964844
+      ],
+      "seed": 42,
+      "visible_keypoints": 14
+    },
+    {
+      "truth": [
+        60,
+        0,
+        0,
+        40
+      ],
+      "prediction": [
+        61.20903396606445,
+        -0.09319932013750076,
+        0.05989434942603111,
+        41.326988220214844
+      ],
+      "seed": 42,
+      "visible_keypoints": 14
+    }
+  ],
+  "test_mode": "passed: selector and random button only use held-out IDs",
+  "plotly": "passed: top, side, roll, auto/full camera and dynamic training charts",
+  "r2": {
+    "x": 0.9855196270445207,
+    "y": 0.9967177490453473,
+    "z": 0.9965708608562189,
+    "roll": 0.9909555746379454
+  },
+  "presets": "all five populate controls without altering submitted scenario until Generate",
+  "protected_artifacts": {
+    "models/best_model.pt": "cce1414bd8f674d7b5d5e31035f346eaf2fa3cd2225cd86e2972e86c592aea1c",
+    "models/target_scaler.joblib": "9390d7c59f3feed302dccb52ec31ee03886c6115b7648000ef2d7bf9acca7a13",
+    "data/raw/formation_flying_synthetic.csv": "ebcf3d2b86bbe362fb65f4d733fa3d54661c6b448c9279e31c9592a778427298"
+  },
+  "model_sha256": "cce1414bd8f674d7b5d5e31035f346eaf2fa3cd2225cd86e2972e86c592aea1c",
+  "model_unchanged": true,
+  "dataset_and_scaler_unchanged": true,
+  "pages": "all four passed without Python exceptions",
+  "manual_browser_checks": [
+    "25 vs 90 m: far aircraft smaller",
+    "Y -15/Z +8: aircraft left and above camera center",
+    "Y +15/Z -8: aircraft right and below camera center",
+    "Roll -40 vs +40: roll schematic and camera skeleton rotate in opposite directions",
+    "presets only update controls until Generate is pressed"
+  ],
+  "server": "health and root HTTP 200"
+}
